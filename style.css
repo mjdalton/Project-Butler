@@ -1,0 +1,338 @@
+
+/* Layout styles */
+* {
+	box-sizing: border-box;
+}
+body {
+	/*background: #323031;*/
+	background: #1C2541;
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	background-image: url("noisy-texture.png");
+	margin: 0;
+} 
+header {
+
+}
+
+nav ul{
+	margin: 0;
+	float: right;
+	display: inline-block; /* makes all elements want to be in the same line */
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+nav ul li{
+	list-style-type: none;
+	display: inline-block;
+	background: #549F93;
+	color: #0B132B;
+	padding: 5px 15px;
+	margin: 1px .5px;
+	border-radius: 5px;
+}
+
+nav ul li:hover{
+	/*background-color: #FCEC52;*/
+	background-color: #BDD9BF;
+	color: #258EA6;
+	transition-duration: 0.5s;
+}
+
+nav ul li a{
+	color: #0B132B;
+	text-decoration: none; /* removes the line from links */
+}
+footer ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 5px 15px;
+	color: #1C2541;
+}
+
+footer {
+	background: #258EA6;
+	width: 100%;
+	margin: 0;
+	min-height: 100px;
+}
+footer p{
+	margin:auto;
+	text-align: center;
+	padding: 10px;
+	color: #1C2541;
+}
+
+/* heading sytles */
+h1 {
+	color: #EAF7CF;
+	display: inline-block;
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 2.8em;
+	padding-left: .25em;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: absolute;
+	text-shadow: 2px 2px 5px rgba(231, 223, 221, .2); /* White color converted to RGBA for more control over opacity */
+}
+h2 {
+	clear: both; /* Stops the annoying float right issue */
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 250%;
+	color: #EAF7CF;
+	text-align: center;
+	margin: auto;
+	padding: 5px 15px;
+	border-radius: 5px;
+	background: #258EA6;
+	/*-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);*/
+	width: 10em;
+}
+h3 {
+	text-align: center;
+	margin: 0;
+	color: #258EA6;
+	font-size: 150%;
+	font-weight: bold;
+}
+h4 {
+	text-align: center;
+	margin: 0;
+	color: #BDD9BF;
+}
+h5 {
+	text-align: center;
+	margin: 0;
+	color: #BDD9BF;
+}
+header h1 {
+	margin: 0;
+	display: inline-block;
+}
+
+/* other styles */
+a {
+	color: purple;
+}
+
+p {
+	color: #BDD9BF;
+	padding: 0;
+	text-align: center;
+	margin: auto;
+	max-width: 80%;
+}
+img {
+	opacity: 1;
+	filter: alpha(opacity=50); /* Internet Explorer 8 and earlier */
+	display:inline-block;
+	max-width: 80%; /* Next two lines allow picture to scale down, but not up */
+	height: auto;
+	margin: 0 auto; /* Centers the picture */
+	border-radius: 15px;
+	padding: 0 5px;
+}
+img:hover {
+	opacity: .5;
+	filter: alpha(opacity=100);
+}
+/* A class, if specified will use this instead of the regular class for a tag, can apply to multiple things, slower to load */
+.secondary {
+	background: #000000;
+	color: white;
+	padding: 10px;
+}
+.row:{
+
+}
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.maincol { /*center column that holds most content */
+	background: #1C2541;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: .5%;
+	width: 50%;
+	border-radius: 5px;
+	border-style: dotted;
+	border-color: #258EA6;
+}
+.subcol { /* for creation of three columns */
+	float: left;
+	background: #CFFFB3;
+	margin: .5%;
+	padding: .5%;
+	width: 31%;
+	border-radius: 5px; /* rounds corners */
+}
+.center {
+	text-align: left;
+	margin: 0 auto;
+}
+.button {
+	text-align: center;
+	background-color: purple;
+	border: none;
+	text-decoration: none;
+}
+.rotate90 {
+	transform: rotate(90deg);
+}
+.thumbnail {
+	height: auto;
+
+}
+.rotate90.thumbnail {
+	transform: rotate(90deg);
+	height: auto;
+}
+.resumeBtn{ /*for the button linking to my resume */
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	color: #EAF7CF;
+	background-color: #549F93;
+	font-size: 400%;
+	border-radius: 10px;
+	border-style: none;
+	margin: 0;
+	display: inline-block;
+	padding: .5em;
+	margin-bottom: 15px;
+	text-align: center;
+	float: center;
+}
+.resumeBtn:hover {
+	background-color: #BDD9BF;
+	transition-duration: 0.5s;
+}
+.icon {
+	font-size: 3em;
+}
+.container {
+	position: relative;
+}
+.imgText {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	font-size: 1em;
+	color: white;
+}
+/* an id, very specific, can use only one on a page, faster to load */
+#header_nav {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+
+}
+#paraul {
+	list-style-position: inside;
+	text-align: center;
+	margin: 5px;
+	color: #BDD9BF;
+	display: inline-block;
+	position: relative;
+	width: 90%;
+	margin-bottom: 15px;
+}
+#backToTopBtn { /*for the button to take the user back to the top of the page */
+	font-family: 'Cabin', Helvetica, Arial, sans-serif; 
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: #1C2541; /* Make borders black color */
+	outline: none; /* Remove outline */
+    background-color: #258EA6; /* Set a background color to dark purple */
+    color: #258EA6; /* Text color to fuscia */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+	border-style: solid; /* Make border solid */
+
+}
+#backToTopBtn:hover {
+    background-color: #BDD9BF; /* Add a fuscia background on hover */
+	transition-duration: 0.5s; /* Makes color fade over longer period of time */
+}
+#headerBar {
+	background: #1C2541;
+	height: 4em;
+	margin-bottom: 2em;
+	border-bottom: solid;
+	border-color: #258EA6;
+	border-width: .25em;
+}
+
+
+/* Adjustments for other screen sizes */
+/* Smartphones */
+@media screen and (max-width: 480px) {
+	#headerBar {
+		height: 10em;
+	}
+	h1 {
+		margin: 0;
+		display: inline-block;
+	}
+	nav ul{
+		padding-top: 4em;
+	}
+	nav ul li{
+		margin-top: 10px;
+	}
+	.maincol {
+		width: 85%;
+		
+	}
+	.resumeBtn {
+		width: 85%;
+	}
+	.icon {
+		font-size: 7em;
+	}
+	h3, h4, h5 {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	img {
+		max-width: 60%;
+		opacity: 1;
+		border-radius: 10px;
+	}
+	p {
+		margin-bottom: 1em;
+		margin-top: 1em;
+	}
+}
+/* Portrait tablets */
+@media screen and (min-width: 481px) and (max-width: 600px){
+	#headerBar{
+		height: 10em;
+	}
+	.maincol{
+		width: 85%;
+	}
+	nav ul{
+		padding-top: 4em;
+	}
+	nav ul li{
+		margin-top: 10px;
+	}
+}
+/* Landscape tablets & low-res laptops/desktops */
+@media screen and (min-width: 601px) and (max-width: 1025px){
+	.maincol{
+		width: 75%;
+	}
+}

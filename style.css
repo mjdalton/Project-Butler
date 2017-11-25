@@ -20,39 +20,28 @@ body {
 	background-image: url("noisy-texture.png");
 	margin: 0;
 } 
-header {
-
+/* Navigation bar **/
+.navbar-default .navbar-brand {
+    color: var(--lightGreen);
+    font-size : 45px;
+}
+.navbar-default {
+    background-color: var(--turqoise);
+    border-color: var(--turqoise);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #333;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--lightGreen);
 }
 
-nav ul{
-	margin: 0;
-	float: right;
-	display: inline-block; /* makes all elements want to be in the same line */
-	padding: 15px;
-	margin-bottom: 20px;
-}
-
-nav ul li{
-	list-style-type: none;
-	display: inline-block;
-	background: var(--darkGreen);
-	color: #0B132B;
-	padding: 5px 15px;
-	margin: 1px .5px;
-	border-radius: 5px;
-}
-
-nav ul li:hover{
-	/*background-color: #FCEC52;*/
-	background-color: var(--lightGreen);
-	color: var(--turqoise);
-	transition-duration: 0.5s;
-}
-
-nav ul li a{
-	color: #0B132B;
-	text-decoration: none; /* removes the line from links */
-}
 footer ul li{
 	list-style-type: none;
 	display: inline;

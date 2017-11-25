@@ -13,7 +13,7 @@
       <title>Math 265</title>
 	  <link href="style.css" rel="stylesheet" type="text/css" />
 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	  
+	  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 		<script src="backtotop.js" type="text/javascript"></script>

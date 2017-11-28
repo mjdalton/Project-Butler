@@ -61,7 +61,7 @@
 			<p>
 				<center>
 				<b>Email: </b>Butler's email<br>
-				<b>Phone: </b>maybe?<br>
+				<b>Phone: </b>867-5309(maybe?)<br>
 				&copy; Iowa State University Math Department
 				</center>
 			</p>

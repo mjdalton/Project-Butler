@@ -19,28 +19,8 @@ body {
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
 	background-image: url("noisy-texture.png");
 	margin: 0;
+	font-size: 15px;
 } 
-/* Navigation bar **/
-.navbar-default .navbar-brand {
-    color: var(--lightGreen);
-    font-size : 45px;
-}
-.navbar-default {
-    background-color: var(--turqoise);
-    border-color: var(--turqoise);
-}
-.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus {
-    color: #333;
-}
-/* Link */
-.navbar-default .navbar-nav > li > a {
-    color: #333;
-}
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: var(--lightGreen);
-}
 
 footer ul li{
 	list-style-type: none;
@@ -84,7 +64,7 @@ h2 {
 	text-align: center;
 	margin: auto;
 	padding: 5px 15px;
-	border-radius: 5px;
+	/* border-radius: 5px; 		This is the thing that makes rounded corners, testing how it looks without them?*/
 	background: var(--turqoise);
 	/*-ms-transform: rotate(5deg);
 	-webkit-transform: rotate(5deg);
@@ -94,7 +74,7 @@ h2 {
 h3 {
 	text-align: center;
 	margin: 0;
-	color: var(--turqoise);
+	color: var(--lightGreen);
 	font-size: 150%;
 	font-weight: bold;
 }
@@ -112,8 +92,6 @@ header h1 {
 	margin: 0;
 	display: inline-block;
 }
-
-/* other styles */
 a {
 	color: purple;
 }
@@ -128,6 +106,12 @@ p {
 input {
 	text-align: center;
 }
+
+
+
+/* -----------------------------------------------------CLASSES--------------------------------------------------------------------*/
+
+
 
 /* A class, if specified will use this instead of the regular class for a tag, can apply to multiple things, slower to load */
 .secondary {
@@ -161,7 +145,7 @@ input {
 	margin: .5%;
 	padding: .5%;
 	width: 31%;
-	border-radius: 5px; /* rounds corners */
+	border-radius: 1px; /* rounds corners */
 }
 .center {
 	text-align: left;
@@ -173,13 +157,33 @@ input {
 	border: none;
 	text-decoration: none;
 }
-.rotate90 {
-	transform: rotate(90deg);
+.icon { /* Used for the GitHub icon */
+	font-size: 3em;
 }
-
-.rotate90.thumbnail {
-	transform: rotate(90deg);
-	height: auto;
+.container {
+	position: relative;
+}
+.img {
+	border: 5px solid var(--turqoise);
+}
+.img:hover {
+	filter: invert(100%);
+	transition-duration: 0.5s;
+	border-color: #422640; /* Inverted color for lightGreen */
+}
+/* Buttons */
+.submitBtn {
+	background-color: var(--darkGreen);
+	border-style: none;
+	font-size: 2em;
+	padding: .5em;
+	color: var(--lightYellow);
+	border-radius: 10px;
+}
+.submitBtn:hover {
+	background-color: var(--lightGreen);
+	transition-duration: 0.5s;
+	color: #0B132B;
 }
 .resumeBtn{ /*for the button linking to my resume */
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
@@ -199,32 +203,42 @@ input {
 	background-color: var(--lightGreen);
 	transition-duration: 0.5s;
 }
-.icon {
-	font-size: 3em;
-}
-.container {
-	position: relative;
-}
-
-.submitBtn {
-	background-color: var(--darkGreen);
-	border-style: none;
-	font-size: 2em;
-	padding: .5em;
-	color: var(--lightYellow);
-	border-radius: 10px;
-}
-.submitBtn:hover {
-	background-color: var(--lightGreen);
-	transition-duration: 0.5s;
-	color: #0B132B;
-}
 .textBox {
 	border-style: none;
 	border-radius: 10px;
 	width: 15em;
 	height: 2em;
 }
+.smallTxt {
+	font-size: .7em;
+	font-style: italic;
+}
+/* Navigation bar **/
+.navbar-default .navbar-brand {
+    color: var(--lightGreen);
+    font-size : 3em;
+}
+.navbar-default {
+    background-color: var(--turqoise);
+    border-color: var(--turqoise);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #333;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--lightGreen);
+}
+
+
+/* ---------------------------------------------------------IDs----------------------------------------------------------------------*/
+
+
 /* an id, very specific, can use only one on a page, faster to load */
 #header_nav {
 		position: sticky;

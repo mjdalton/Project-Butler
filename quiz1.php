@@ -2,23 +2,25 @@
 
 	include_once 'header.php';
 ?>
-		
-		<h2>WARNING: Your data will not be saved unless you login</h2><br>
-		<h3>Insert quiz content here</h3><br>
-		<p>I'm thinking of also adding a drop down menu from the top menu bar that includes a list of links to all quizzes<br>The footer should stick to the bottom after we 
-			add more content.  I added another lighter color because all the colors we initially picked when put together were too dark.  Stuff blended into each other.  We can definitely
-			pick different colors, just maybe similar shades of light/dark to this?<br><br>For ease of work I've only done some of the changes to the quiz 1 page and we can copy it to the 
-			other pages if we like them.</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			
-		<!--
-		<form>
-			 <img id="myImage" src="star.jpg" />
-			 <p>Click the buttons below to handle animation</p>
-			 <input type="button" value="Start" onclick="moveDown();" />
-			 <input type="button" value="Stop" onclick="stop();" />
-		</form>
-		-->
 
+		<h2>WARNING: <br>Your data will not be saved unless you login</h2><br><br><br>
+
+		<center>
+			<h3>Question 1</h3><br>
+			<a href = "quiz1q1.php"><img src="images/quiz1q1.png" alt="Question 1" class="img"></a><br><br><br><br>
+			<h3>Question 2</h3><br>
+			<a href = "quiz1q2.php"><img src="images/quiz1q2.png" alt="Question 2" class="img"></a><br><br><br><br>
+			<h3>Question 3</h3><br>
+			<a href = "quiz1q3.php"><img src="images/quiz1q3.png" alt="Question 3" class="img"></a><br><br><br><br>
+			<h3>Question 4</h3><br>
+			<a href = "quiz1q4.php"><img src="images/quiz1q4.png" alt="Question 4" class="img"></a><br><br><br><br>
+			<h3>Question 5</h3><br>
+			<a href = "quiz1q5.php"><img src="images/quiz1q5.png" alt="Question 5" class="img"></a><br><br><br><br>
+		</center>
+		
+		
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			
 <?php
 	include_once 'footer.php';
 ?>

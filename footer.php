@@ -1,9 +1,10 @@
-		<footer>
+
+<footer>
 
 			<p>
 				<center>
 				<b>Email: </b>Butler's email<br>
-				<b>Phone: </b>maybe?<br>
+				<b>Phone: </b>(515)867-5309<br>
 				&copy; Iowa State University Math Department
 				</center>
 			</p>

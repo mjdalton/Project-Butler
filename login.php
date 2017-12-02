@@ -3,9 +3,7 @@
 	include_once 'header.php';
 ?>
 
-		<h2>Login Stuff</h2><br>
-		<p>Don't have an account yet?</p><br>
-		<center><a href="signup.php"><button class="submitBtn">Signup</button></a></center>
+		<br><br><h2>Login</h2>
 		<form action="includes/login-inc.php" method="POST"><center><br><br>
 			<p>Username:</p>
 			<input type ="text" name="uid" placeholder="Username" class="textBox"><br><br>
@@ -15,6 +13,10 @@
 			<!--<input type ="submit" name="Submit" class="submitBtn"> -->
 			</center>
 		</form>
+		
+		<br><br><br><br><h2>Don't have an account yet?</h2><br><br>
+		<center><a href="signup.php"><button class="submitBtn">Signup</button></a></center>
+		
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <?php

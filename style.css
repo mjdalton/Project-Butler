@@ -166,7 +166,10 @@ input {
 .img {
 	border: 5px solid var(--turqoise);
 }
-.img:hover {
+.imgLink {
+	border: 5px solid var(--turqoise);
+}
+.imgLink:hover {
 	filter: invert(100%);
 	transition-duration: 0.5s;
 	border-color: #422640; /* Inverted color for lightGreen */

@@ -9,12 +9,12 @@
 				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
 			}
 		?>
-		<center><img src="images/quiz1q1.png" alt="Question 1" class="img"><br><br><br><br><br>
+		<center><img src="images/quiz1q2.png" alt="Question 1" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<input id="numb"><br><br>
 		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>
-		<a href="quiz1.php"><button class="submitBtn"><- All Questions</button></a>
-		<a href="quiz1q2.php"><button class="submitBtn">Question 2 -></button></a>
+		<a href="quiz1q1.php"><button class="submitBtn"><- Question 1</button></a>
+		<a href="quiz1q3.php"><button class="submitBtn">Question 3 -></button></a>
 
 		<p id="demo"></p></center>
 
@@ -46,3 +46,4 @@
 <?php
 	include_once 'footer.php';
 ?>
+

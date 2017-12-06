@@ -59,17 +59,17 @@ h1 {
 h2 {
 	clear: both; /* Stops the annoying float right issue */
 	font-family: 'Cabin', Helvetica, Arial, sans-serif;
-	font-size: 250%;
+	font-size: 175%;
 	color: var(--lightYellow);
 	text-align: center;
 	margin: auto;
-	padding: 5px 15px;
+	padding: 5px 5px;
 	/* border-radius: 5px; 		This is the thing that makes rounded corners, testing how it looks without them?*/
 	background: var(--turqoise);
 	/*-ms-transform: rotate(5deg);
 	-webkit-transform: rotate(5deg);
 	transform: rotate(5deg);*/
-	width: 10em;
+	width: 20em;
 }
 h3 {
 	text-align: center;
@@ -157,6 +157,8 @@ input {
 	border: none;
 	text-decoration: none;
 }
+
+
 .icon { /* Used for the GitHub icon */
 	font-size: 3em;
 }
@@ -197,14 +199,23 @@ input {
 	border-style: none;
 	margin: 0;
 	display: inline-block;
-	padding: .5em;
+	width: 30%;
 	margin-bottom: 15px;
 	text-align: center;
 	float: center;
 }
+.resumeBtn .comment {
+ display: none; 
+}
 .resumeBtn:hover {
 	background-color: var(--lightGreen);
 	transition-duration: 0.5s;
+}
+.resumeBtn:hover .comment{
+	display : inline;
+}
+.resumeBtn:hover .title{
+	display :none;
 }
 .textBox {
 	border-style: none;

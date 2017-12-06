@@ -44,8 +44,8 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 		//}
 //	}
 	
-//} 
-//else{
-//	header("Location: ../signup.php?signup=error"); //sends user back to the signup page if submit wasn't clicked
-//	exit(); //stops script from running
-//}
+} 
+else{
+	header("Location: ../signup.php"); //sends user back to the signup page if submit wasn't clicked
+	exit(); //stops script from running
+}

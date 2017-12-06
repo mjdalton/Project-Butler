@@ -3,9 +3,18 @@
 
 	include_once 'header.php';
 ?>
-		<center><a href="quiz1.php"><button class="resumeBtn">QUIZ 1</button></a></center>
-		<center><a href="quiz2.php"><button class="resumeBtn">QUIZ 2</button></a></center>
-		<center><a href="quiz3.php"><button class="resumeBtn">QUIZ 3</button></a></center>
+		<center><a href="quiz1.php"><button class="resumeBtn"> 
+		 <span class="title">QUIZ 1</span>
+   		 <span style = "font-size: 25px" class="comment"> Calculus Review </span>
+		</button></a></center>
+		<center><a href="quiz2.php"><button class="resumeBtn">
+		 <span class="title">QUIZ 2</span>
+   		 <span style = "font-size: 25px" class="comment"> Coordinate Systems </span>
+   		</button></a></center>
+		<center><a href="quiz3.php"><button class="resumeBtn">
+		 <span class="title">QUIZ 3</span>
+   		 <span style = "font-size: 25px" class="comment"> Dot Product </span>
+   		</button></a></center>
 		<!-- <center><a href="quiz4.php"><button class="resumeBtn">QUIZ 4</button></a></center>
 		<center><a href="quiz5.php"><button class="resumeBtn">QUIZ 5</button></a></center><br> -->
 		<?php

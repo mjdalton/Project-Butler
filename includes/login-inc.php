@@ -13,7 +13,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 			header("Location: ../index.php?login=empty");
 			exit();
 	} else{
-		$sql = "SELECT * FROM users WHERE user_uid='$uid'";
+		$sql = "SELECT * FROM users WHERE user_uid='$uid'"; //add OR user_email = '$uid' to check for email login
 		$result = mysqli_query($conn, $sql);
 		$resultCheck = mysqli_num_rows($result); //How many rows were found in the database using those parameters
 		if($resultCheck < 1){ //user isn't found in the database
@@ -22,13 +22,17 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 		} else {
 			if($row = mysqli_fetch_assoc($result)){
 				//De-hashing the password
-				$hashedPwdCheck = strcmp($pwd, $row['user_pwd']);
-				//$hashedPwdCheck = password_verify($pwd, $row['user_pwd']); //for if we use hashed passwords
-				if($hashedPwdCheck != 0){ //Password doesn't match
+				//$hashedPwdCheck = strcmp($pwd, $row['user_pwd']);
+				$hashedPwdCheck = password_verify($pwd, $row['user_pwd']); //for if we use hashed passwords
+				if($hashedPwdCheck == false){
+				//if($hashedPwdCheck != 0){ //Password doesn't match
 					header("Location: ../index.php?login=passwordincorrect");
+					$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
+					echo $hashedPwdCheck;
 					exit();
-				} //elseif($hashedPwdCheck == true) { //Passwords match
-					else if($hashedPwdCheck == 0){
+
+				}elseif($hashedPwdCheck == true) { //Passwords match
+					//else if($hashedPwdCheck == 0){
 					//Login in the user here
 					$_SESSON['u_id'] = $row['user_id'];
 					$_SESSON['u_first'] = $row['user_first'];
@@ -42,7 +46,10 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 		}
 	}
 	
-	header("Location: ../index.php?login=unexpectederror");
-	exit();
+	//header("Location: ../index.php?login=unexpectederror");
+	//exit();
 	
+}else{
+	header("Location: ../index.php?login=error");
+	exit();
 }

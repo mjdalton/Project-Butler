@@ -28,7 +28,6 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 				//if($hashedPwdCheck != 0){ //Password doesn't match
 					header("Location: ../index.php?login=passwordincorrect");
 					$hashedPwd = password_hash($pwd, PASSWORD_DEFAULT);
-					echo $hashedPwdCheck;
 					exit();
 
 				}elseif($hashedPwdCheck == true) { //Passwords match

@@ -32,13 +32,13 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 
 				}elseif($hashedPwdCheck == true) { //Passwords match
 					//else if($hashedPwdCheck == 0){
-					//Login in the user here
-					$_SESSON['u_id'] = $row['id'];
-					$_SESSON['u_first'] = $row['user_first'];
-					$_SESSON['u_last'] = $row['user_last'];
-					$_SESSON['u_email'] = $row['user_email'];
-					$_SESSON['u_uid'] = $row['user_uid'];
-					header("Location: ../test.php?login=success");
+					//login in the user here
+					$_SESSION['u_id'] = $row['id'];
+					$_SESSION['u_first'] = $row['user_first'];
+					$_SESSION['u_last'] = $row['user_last'];
+					$_SESSION['u_email'] = $row['user_email'];
+					$_SESSION['u_uid'] = $row['user_uid'];
+					header("Location: ../index.php?login=success");
 					exit();
 					
 				}

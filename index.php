@@ -21,8 +21,9 @@
 			if (isset($_SESSION['u_id'])) {
 				echo "<p>You are logged in!</p>";
 			}
+
 		?>
-		
+		<p>You are logged in!</p>
 		<br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php
 	include_once 'footer.php';

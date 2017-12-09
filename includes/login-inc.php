@@ -38,6 +38,8 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 					$_SESSION['u_last'] = $row['user_last'];
 					$_SESSION['u_email'] = $row['user_email'];
 					$_SESSION['u_uid'] = $row['user_uid'];
+					$_SESSION['u_score'] = $row['score'];
+					$_SESSION['u_quiz1'] = $row['quiz1'];
 					header("Location: ../index.php?login=success");
 					exit();
 					

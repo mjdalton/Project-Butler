@@ -1,6 +1,7 @@
 <?php
 
 	include_once 'header.php';
+	include_once 'includes/dbh-inc.php'; //connection to the database
 ?>
 		
 		
@@ -9,6 +10,7 @@
 				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
 			}
 		?>
+		<br><br><br>
 		<center><img src="images/quiz1q1.png" alt="Question 1" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<input id="numb"><br><br>
@@ -31,7 +33,8 @@
 			} else {
 				text = "Input correct";
 				<?php
-					$sql = "INSERT INTO users (quiz1, points) VALUES (1, 10)"; //Hopefully inputs values for completion of the question into the database
+					//$sql = "INSERT INTO users (quiz1, score) VALUES ('3', '10')"; //Hopefully inputs values for completion of the question into the database
+					//echo '<p>Succesful?</p>';
 				?>
 			}
 			document.getElementById("demo").innerHTML = text;

@@ -38,7 +38,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 					$_SESSON['u_last'] = $row['user_last'];
 					$_SESSON['u_email'] = $row['user_email'];
 					$_SESSON['u_uid'] = $row['user_uid'];
-					header("Location: ../index.php?login=success");
+					header("Location: ../test.php?login=success");
 					exit();
 					
 				}

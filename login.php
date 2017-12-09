@@ -15,8 +15,7 @@
 		</form>
 		
 		<br><br><br><br><h2>Don't have an account yet?</h2><br><br>
-		<center><a href="signup.php"><button class="submitBtn">Signup</button></a></center><br><br>
-		<center><a href="logout.php"><button class="submitBtn">Logout</button></a></center>
+		<center><a href="signup.php"><button class="submitBtn">Signup</button></a></center>
 		
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

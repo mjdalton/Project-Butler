@@ -37,10 +37,11 @@
 			document.getElementById("demo").innerHTML = text;
 		}
 		</script><br><br>
+		<p>This script currently returns whether a number is 10, when we have answer we should compare strings since this question is a plane?  The warning for logging in is set to disappear
+		if the user is logged in.</p>
 		
 		
-		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			
 <?php
 	include_once 'footer.php';

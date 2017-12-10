@@ -11,7 +11,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 	echo '<p>Submitted</p>';
 
 	if($answer == $correctAns){
-		header("Location: ../quiz1q1.php?submission=correct");
+		header("Location: ../Quiz1Pages/Q1.php?submission=correct");
 		$currentScore += 10;
 		$sql = "UPDATE users SET score='$currentScore' quiz1='$currentScore' WHERE id='$currentid'"; //update score in db
 		mysqli_query($conn, $sql);  //send command to update
@@ -20,13 +20,13 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 
 	}
 	else{
-		header("Location: ../quiz1q1.php?submission=incorrect");
+		header("Location: ../Quiz1Pages/Q1.php?submission=incorrect");
 		echo '<h3>That is incorrect!</h3>';
 	}
 	
 
 }
 else{
-	header("Location: ../quiz1q1.php?submission=error");
+	header("Location: ../Quiz1Pages/Q1.php?submission=error");
 	exit();
 }

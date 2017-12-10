@@ -13,7 +13,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- The GitHub icon -->
 		<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"> <!-- The Cabin font -->
 		<script src="backtotop.js" type="text/javascript"></script> <!-- Script for the back to top button -->
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
 
@@ -23,6 +23,15 @@
       <a class="navbar-brand" href="index.php">Math265</a>
     </div>
     <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Exams
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="exam1.php">Exam 1</a></li>
+          <li><a href="exam2.php">Exam 2</a></li>
+          <li><a href="exam3.php">Exam 3</a></li>
+        </ul>
+      </li>
       <li class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Quizzes
         <span class="caret"></span></a>

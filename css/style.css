@@ -1,0 +1,318 @@
+
+/* Layout styles */
+* {
+	box-sizing: border-box;
+}
+
+:root { /* Global Variables */
+/* All colors actually in use on the site are included here
+	Other colors are left over from other site and will be trimmed later */
+	--turqoise: #258EA6;
+	--darkGreen: #549F93;
+	--navy: #0B132B;
+	--lightGreen: #BDD9BF;
+	--lightYellow: #EAF7CF;
+}
+body {
+	/*background: #323031;*/
+	background: #1C2541;
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	background-image: url("noisy-texture.png");
+	margin: 0;
+	font-size: 15px;
+} 
+
+footer ul li{
+	list-style-type: none;
+	display: inline;
+	padding: 5px 15px;
+	color: #1C2541;
+}
+
+footer {
+	background: var(--turqoise);
+	width: 100%;
+	margin: 0;
+	min-height: 100px;
+}
+footer p{
+	margin:auto;
+	text-align: center;
+	padding: 10px;
+	color: #1C2541;
+}
+
+/* heading sytles */
+h1 {
+	color: var(--lightYellow);
+	display: inline-block;
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 2.8em;
+	padding-left: .25em;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	position: absolute;
+	text-shadow: 2px 2px 5px rgba(231, 223, 221, .2); /* White color converted to RGBA for more control over opacity */
+}
+h2 {
+	clear: both; /* Stops the annoying float right issue */
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	font-size: 175%;
+	color: var(--lightYellow);
+	text-align: center;
+	margin: auto;
+	padding: 5px 5px;
+	/* border-radius: 5px; 		This is the thing that makes rounded corners, testing how it looks without them?*/
+	background: var(--turqoise);
+	/*-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	transform: rotate(5deg);*/
+	width: 20em;
+}
+h3 {
+	text-align: center;
+	margin: 0;
+	color: var(--lightGreen);
+	font-size: 150%;
+	font-weight: bold;
+}
+
+header h1 {
+	margin: 0;
+	display: inline-block;
+}
+a {
+	color: purple;
+}
+
+p {
+	color: var(--lightGreen);
+	padding: 0;
+	text-align: center;
+	margin: auto;
+	max-width: 80%;
+}
+input {
+	text-align: center;
+}
+
+
+
+/* -----------------------------------------------------CLASSES--------------------------------------------------------------------*/
+
+
+
+/* A class, if specified will use this instead of the regular class for a tag, can apply to multiple things, slower to load */
+.secondary {
+	background: #000000;
+	color: white;
+	padding: 10px;
+}
+.row:{
+
+}
+.row:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.maincol { /*center column that holds most content */
+	background: #1C2541;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: .5%;
+	width: 50%;
+	border-radius: 5px;
+	border-style: dotted;
+	border-color: var(--turqoise);
+}
+.subcol { /* for creation of three columns */
+	float: left;
+	background: #CFFFB3;
+	margin: .5%;
+	padding: .5%;
+	width: 31%;
+	border-radius: 1px; /* rounds corners */
+}
+.center {
+	text-align: left;
+	margin: 0 auto;
+}
+.button {
+	text-align: center;
+	background-color: purple;
+	border: none;
+	text-decoration: none;
+}
+
+
+.icon { /* Used for the GitHub icon */
+	font-size: 3em;
+}
+.container {
+	position: relative;
+}
+.img {
+	border: .33em solid var(--turqoise);
+}
+.imgLink {
+	border: .33em solid var(--turqoise);
+}
+.imgLink:hover {
+	filter: invert(100%);
+	transition-duration: 0.5s;
+	border-color: #422640; /* Inverted color for lightGreen */
+}
+/* Buttons */
+.submitBtn {
+	background-color: var(--darkGreen);
+	border-style: none;
+	font-size: 2em;
+	padding: .5em;
+	color: var(--lightYellow);
+	border-radius: 10px;
+}
+.submitBtn:hover {
+	background-color: var(--lightGreen);
+	transition-duration: 0.5s;
+	color: #0B132B;
+}
+.resumeBtn{ /*for the button linking to my resume */
+	font-family: 'Cabin', Helvetica, Arial, sans-serif;
+	color: var(--lightYellow);
+	background-color: var(--darkGreen);
+	font-size: 400%;
+	border-radius: 10px;
+	border-style: none;
+	margin: 0;
+	display: inline-block;
+	width: 30%;
+	margin-bottom: 15px;
+	text-align: center;
+	float: center;
+}
+.resumeBtn .comment {
+ display: none; 
+}
+.resumeBtn:hover {
+	background-color: var(--lightGreen);
+	transition-duration: 0.5s;
+}
+.resumeBtn:hover .comment{
+	display : inline;
+}
+.resumeBtn:hover .title{
+	display :none;
+}
+.textBox {
+	border-style: none;
+	border-radius: 10px;
+	width: 15em;
+	height: 2em;
+}
+.smallTxt {
+	font-size: .7em;
+	font-style: italic;
+}
+/* Navigation bar **/
+.navbar-default .navbar-brand {
+    color: var(--lightGreen);
+    font-size : 3em;
+}
+.navbar-default {
+    background-color: var(--turqoise);
+    border-color: var(--turqoise);
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #333;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #333;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--lightGreen);
+}
+
+
+/* ---------------------------------------------------------IDs----------------------------------------------------------------------*/
+
+
+/* an id, very specific, can use only one on a page, faster to load */
+#header_nav {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+
+}
+#paraul {
+	list-style-position: inside;
+	text-align: center;
+	margin: 5px;
+	color: var(--lightGreen);
+	display: inline-block;
+	position: relative;
+	width: 90%;
+	margin-bottom: 15px;
+}
+#backToTopBtn { /*for the button to take the user back to the top of the page */
+	font-family: 'Cabin', Helvetica, Arial, sans-serif; 
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: #1C2541; /* Make borders black color */
+	outline: none; /* Remove outline */
+    background-color: var(--darkGreen); /* Set a background color to dark purple */
+    color: #0B132B; /* Text color to fuscia */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+	border-style: solid; /* Make border solid */
+
+}
+#backToTopBtn:hover {
+    background-color: var(--lightGreen); /* Add a fuscia background on hover */
+	transition-duration: 0.5s; /* Makes color fade over longer period of time */
+}
+#headerBar {
+	background: #1C2541;
+	height: 4em;
+	margin-bottom: 2em;
+	border-bottom: solid;
+	border-color: var(--turqoise);
+	border-width: .25em;
+}
+
+
+/* Adjustments for other screen sizes */
+/* Smartphones */
+@media screen and (max-width: 480px) {
+
+}
+/* Portrait tablets */
+@media screen and (min-width: 481px) and (max-width: 600px){
+	#headerBar{
+		height: 10em;
+	}
+	.maincol{
+		width: 85%;
+	}
+	nav ul{
+		padding-top: 4em;
+	}
+	nav ul li{
+		margin-top: 10px;
+	}
+}
+/* Landscape tablets & low-res laptops/desktops */
+@media screen and (min-width: 601px) and (max-width: 1025px){
+
+}

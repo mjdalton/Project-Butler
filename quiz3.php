@@ -8,24 +8,9 @@
 
 		<center>
 			<h3>Question 1</h3><br>
-			<a href = "quiz3q1.php"><img src="images/quiz3q1.png" alt="Question 1" class="imgLink"></a><br><br><br><br>
-			<?php
-				/** Tried another approach, this places data into an array, likely not the best way to do this **/
-									$sql = "SELECT * FROM users";
-					$result = mysqli_query($conn, $sql);
-					$datas = array();
-					if(mysqli_num_rows($result) > 0){
-						while($row = mysqli_fetch_assoc($result)){
-								$datas[] = $row;
-						}
-					}
-					//print_r($data);
-					foreach($datas[6] as $data){
-						echo $data;
-					}
-			?>
+			<a href = "Quiz3Pages/Q1.php"><img src="images/quiz3q1.png" alt="Question 1" class="imgLink"></a><br><br><br><br>
 			<h3>Question 2</h3><br>
-			<a href = "quiz3q2.php"><img src="images/quiz3q2.png" alt="Question 2" class="imgLink"></a><br><br><br><br>
+			<a href = "Quiz3Pages/Q2.php"><img src="images/quiz3q2.png" alt="Question 2" class="imgLink"></a><br><br><br><br>
 			<h3>Question 3</h3><br>
 			<a href = "quiz3q3.php"><img src="images/quiz3q3.png" alt="Question 3" class="imgLink"></a><br><br><br><br>
 			<h3>Question 4</h3><br>

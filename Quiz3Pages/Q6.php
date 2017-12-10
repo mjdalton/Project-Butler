@@ -1,22 +1,20 @@
 <?php
 
-	include_once 'header.php';
-	include_once 'includes/dbh-inc.php'; //connection to the database
-?>
-		
-		
+	include 'header.php';
+?>		
 		<?php
 			if (!isset($_SESSION['u_id'])) {
 				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
 			}
 		?>
 		<br><br><br>
-		<center><img src="images/quiz1q1.png" alt="Question 1" class="img"><br><br><br><br><br>
+		<center><img src="../images/quiz3q6.png" alt="Question 6" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<input id="numb"><br><br>
 		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>
-		<a href="quiz1.php"><button class="submitBtn"><- All Questions</button></a>
-		<a href="quiz1q2.php"><button class="submitBtn">Question 2 -></button></a>
+		<a href="Q5.php"><button class="submitBtn"><- Question 5</button></a>
+		<a href="Q7.php"><button class="submitBtn">Question 7 -></button></a>
+		
 
 		<p id="demo"></p></center>
 
@@ -40,11 +38,8 @@
 			document.getElementById("demo").innerHTML = text;
 		}
 		</script><br><br>
-		
-		
-		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php
-	include_once 'footer.php';
+	include_once '../footer.php';
 ?>

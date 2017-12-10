@@ -1,20 +1,20 @@
 <?php
 
-	include_once 'header.php';
-?>
-		
-		
+	include 'header.php';
+?>		
 		<?php
 			if (!isset($_SESSION['u_id'])) {
 				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
 			}
 		?>
-		<center><img src="images/quiz1q4.png" alt="Question 1" class="img"><br><br><br><br><br>
+		<br><br><br>
+		<center><img src="../images/quiz3q9.png" alt="Question 9" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<input id="numb"><br><br>
 		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>
-		<a href="quiz1q3.php"><button class="submitBtn"><- Question 3</button></a>
-		<a href="quiz1q5.php"><button class="submitBtn">Question 5 -></button></a>
+		<a href="Q8.php"><button class="submitBtn"><- Question 8</button></a>
+		<a href="Q10.php"><button class="submitBtn">Question 10 -></button></a>
+		
 
 		<p id="demo"></p></center>
 
@@ -31,18 +31,15 @@
 			} else {
 				text = "Input correct";
 				<?php
-					$sql = "INSERT INTO users (quiz1, points) VALUES (1, 10)"; //Hopefully inputs values for completion of the question into the database
+					//$sql = "INSERT INTO users (quiz1, score) VALUES ('3', '10')"; //Hopefully inputs values for completion of the question into the database
+					//echo '<p>Succesful?</p>';
 				?>
 			}
 			document.getElementById("demo").innerHTML = text;
 		}
 		</script><br><br>
-		<p>This script currently returns whether a number is 10, when we have answer we should compare strings since this question is a plane?  The warning for logging in is set to disappear
-		if the user is logged in.</p>
-		
-		
-		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			
+
+		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php
-	include_once 'footer.php';
+	include_once '../footer.php';
 ?>

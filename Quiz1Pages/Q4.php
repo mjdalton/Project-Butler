@@ -8,7 +8,7 @@
 			}
 		?>
 		<br><br><br>
-		<center><img src="../images/quiz3q4.png" alt="Question 4" class="img"><br><br><br><br><br>
+		<center><img src="../images/quiz1q4.png" alt="Question 4" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<input id="numb"><br><br>
 		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>

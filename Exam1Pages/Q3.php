@@ -8,12 +8,12 @@
 			}
 		?>
 		<br><br><br>
-		<center><img src="../Exam1/Q1.png" alt="Question 1" class="img"><br><br><br><br><br>
+		<center><img src="../Exam1/Q3.png" alt="Question 3" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<input id="numb"><br><br>
 		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>
-		<a href="../exam1.php"><button class="submitBtn"><- All Questions</button></a>
-		<a href="Q2.php"><button class="submitBtn">Question 2 -></button></a>
+		<a href="Q2.php"><button class="submitBtn"><- Question 2</button></a>
+		<a href="Q4.php"><button class="submitBtn">Question 4 -></button></a>
 
 		<p id="demo"></p></center>
 

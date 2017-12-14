@@ -1,6 +1,10 @@
 <?php
 
 session_start();
+session_unset();
+session_destroy();
+
+session_start();
 
 if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 
@@ -39,7 +43,15 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 					$_SESSION['u_email'] = $row['user_email'];
 					$_SESSION['u_uid'] = $row['user_uid'];
 					$_SESSION['u_score'] = $row['score'];
-					$_SESSION['u_quiz1'] = $row['quiz1'];
+					
+					//load answerholders
+					$_SESSION['quiz1'] = $row['quiz1'];
+					$_SESSION['quiz2'] = $row['quiz2'];
+					$_SESSION['quiz3'] = $row['quiz3'];
+					$_SESSION['exam1'] = $row['exam1'];
+					$_SESSION['exam2'] = $row['exam2'];
+					$_SESSION['exam3'] = $row['exam3'];
+					
 					header("Location: ../index.php?login=success");
 					exit();
 					

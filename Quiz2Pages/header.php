@@ -27,7 +27,7 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Exams
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="exam1.php">Exam 1</a></li>
+          <li><a href="../exam1.php">Exam 1</a></li>
           <li><a href="../exam2.php">Exam 2</a></li>
           <li><a href="../exam3.php">Exam 3</a></li>
         </ul>
@@ -45,9 +45,9 @@
 		<!-- <li><a href="login.php">Login</a></li> -->
 		<?php
 			if (isset($_SESSION['u_id'])) {
-				echo '<li><a href="logout.php">Logout</a></li>';
+				echo '<li><a href="../logout.php">Logout</a></li>';
 			} else {
-				echo '<li><a href="login.php">Login</a></li>';
+				echo '<li><a href="../login.php">Login</a></li>';
 			}
 		?>
     </ul>

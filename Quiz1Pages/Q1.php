@@ -19,12 +19,12 @@
 				<button type="submit" name="submit" class="submitBtn">Submit</button>		<br><br><br><br>
 			</form>
 			<p id="demo"></p>
-		</center>  <!-- What is this line for? -->
+		
 
 
 		
 		<br><br><br>
-		<center>
+		
 			<a href="../quiz1.php"><button class="submitBtn"><- All Questions</button></a>
 			<a href="Q2.php"><button class="submitBtn">Question 2 -></button></a>
 		</center>

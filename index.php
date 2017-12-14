@@ -30,7 +30,7 @@
    		</button></a></center>
 		<!-- <center><a href="quiz4.php"><button class="resumeBtn">QUIZ 4</button></a></center>
 		<center><a href="quiz5.php"><button class="resumeBtn">QUIZ 5</button></a></center><br> -->
-
+		
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php
 	include_once 'footer.php';

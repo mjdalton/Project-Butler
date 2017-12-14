@@ -22,6 +22,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 	else{
 		header("Location: ../Quiz1Pages/Q1.php?submission=incorrect");
 		echo '<h3>That is incorrect!</h3>';
+		exit();
 	}
 	
 

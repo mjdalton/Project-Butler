@@ -3,8 +3,12 @@
 	include_once 'header.php';
 	include_once 'includes/dbh-inc.php'; //connection to the database
 ?>
-
-		<h2>WARNING: <br>Your data will not be saved unless you login</h2><br><br><br>
+		<?php
+			if (!isset($_SESSION['u_id'])) {
+				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
+			}
+		?>
+		
 
 		<center>
 			<h3>Question 1</h3><br>

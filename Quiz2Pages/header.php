@@ -41,7 +41,7 @@
           <li><a href="../quiz3.php">Quiz 3</a></li>
         </ul>
       </li>
-      <li><a href="leaderboards.php">Leaderboards</a></li>
+      <li><a href="../leaderboards.php">Leaderboards</a></li>
 		<!-- <li><a href="login.php">Login</a></li> -->
 		<?php
 			if (isset($_SESSION['u_id'])) {

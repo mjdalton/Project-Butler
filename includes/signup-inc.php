@@ -38,7 +38,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 					$sql = "INSERT INTO users (user_first, user_last, user_email, user_uid,user_pwd) VALUES ('$first', '$last', '$email', '$uid','$hashedPwd');";
 					mysqli_query($conn, $sql);
 
-					header("Location: ../signup.php?signup=success"); //sends user back to the signup page 
+					header("Location: ../index.php?signup=success"); //sends user back to the signup page 
 					exit(); //stops script from running
 				}
 			}

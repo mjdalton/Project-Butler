@@ -16,12 +16,12 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 
 
 	if($answer == $correctAns){
-		$pos = strpos($answerholder, $qnum);
+		$pos = strpos($answerholder, ($qnum . ','));
 		
 		//increment score and answer holder if not previously answered
 		if($pos === false){
 			$currentScore += 10;
-			$answerholder .= $qnum; //append questions number to answerholder
+			$answerholder .= $qnum . ','; //append questions number to answerholder
 		}
 		//set score and increment answers
 		if(isset($_SESSION['u_id'])){

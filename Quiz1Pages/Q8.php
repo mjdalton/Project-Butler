@@ -8,36 +8,37 @@
 			}
 		?>
 		<br><br><br>
-		<center><img src="../images/quiz1q8.png" alt="Question 8" class="img"><br><br><br><br><br>
+		<!-- prompt question -->
+		<center><img src="../Quiz1/Q8.png" alt="Question 8" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
-		<input id="numb"><br><br>
-		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>
-		<a href="Q7.php"><button class="submitBtn"><- Question 7</button></a>
-		<a href="Q9.php"><button class="submitBtn">Question 9 -></button></a>
+		<form action="checker/Q8c.php" method="POST">
+			<input type="number" name="answer" placeholder="Your Answer" class="textBox"><br><br>
+			<button type="submit" name="submit" class="submitBtn">Submit</button>		<br><br><br><br>
+		</form>
 		
-
-		<p id="demo"></p></center>
-
-		<script>
-		function ansValidate() {
-			var x, text;
-
-			// Get the value of the input field with id="numb"
-			x = document.getElementById("numb").value;
-
-			// If x is Not a Number or less than one or greater than 10
-			if (isNaN(x) || x != 10) {
-				text = "Input incorrect";
-			} else {
-				text = "Input correct";
-				<?php
-					//$sql = "INSERT INTO users (quiz1, score) VALUES ('3', '10')"; //Hopefully inputs values for completion of the question into the database
-					//echo '<p>Succesful?</p>';
-				?>
+		
+		<!-- nav buttons -->
+		<a href="Q7.php"><button class="submitBtn"><- Question 7</button></a>
+		<?php
+			//search to see if question number is answered
+			$qnum = 'Q8';
+			$test = 'quiz1';
+			if(!isset($_SESSION[$test])){
+				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
-			document.getElementById("demo").innerHTML = text;
-		}
-		</script><br><br>
+			$answerholder = $_SESSION[$test]; //get current answerholder variable
+			$pos = strpos($answerholder, ($qnum . ','));//with comma seperator
+		
+			//display solution if question is answered
+			if($pos !== false){
+				echo '<a href="../Quiz1/Solutions/Q8s.PNG"><button class="submitBtn">Solution</button></a>';
+			}
+		
+			
+		?>
+		<a href="Q9.php"><button class="submitBtn">Question 9 -></button></a>
+
+		</center>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php

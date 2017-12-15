@@ -27,7 +27,7 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, $qnum);
+			$pos = strpos($answerholder, ($qnum . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){

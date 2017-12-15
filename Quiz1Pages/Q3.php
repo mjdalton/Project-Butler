@@ -8,35 +8,37 @@
 			}
 		?>
 		<br><br><br>
-		<center><img src="../images/quiz1q3.png" alt="Question 3" class="img"><br><br><br><br><br>
+		<!-- prompt question -->
+		<center><img src="../Quiz1/Q3.png" alt="Question 3" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
-		<input id="numb"><br><br>
-		<button type="button" onclick="ansValidate()" class="submitBtn">Submit</button><br><br><br><br><br><br><br>
+		<form action="checker/Q3c.php" method="POST">
+			<input type="number" name="answer" placeholder="Your Answer" class="textBox"><br><br>
+			<button type="submit" name="submit" class="submitBtn">Submit</button>		<br><br><br><br>
+		</form>
+		
+		
+		<!-- nav buttons -->
 		<a href="Q2.php"><button class="submitBtn"><- Question 2</button></a>
+		<?php
+			//search to see if question number is answered
+			$qnum = 'Q3';
+			$test = 'quiz1';
+			if(!isset($_SESSION[$test])){
+				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
+			}
+			$answerholder = $_SESSION[$test]; //get current answerholder variable
+			$pos = strpos($answerholder, ($qnum . ','));//with comma seperator
+		
+			//display solution if question is answered
+			if($pos !== false){
+				echo '<a href="../Quiz1/Solutions/Q3s.PNG"><button class="submitBtn">Solution</button></a>';
+			}
+		
+			
+		?>
 		<a href="Q4.php"><button class="submitBtn">Question 4 -></button></a>
 
-		<p id="demo"></p></center>
-
-		<script>
-		function ansValidate() {
-			var x, text;
-
-			// Get the value of the input field with id="numb"
-			x = document.getElementById("numb").value;
-
-			// If x is Not a Number or less than one or greater than 10
-			if (isNaN(x) || x != 10) {
-				text = "Input incorrect";
-			} else {
-				text = "Input correct";
-				<?php
-					//$sql = "INSERT INTO users (quiz1, score) VALUES ('3', '10')"; //Hopefully inputs values for completion of the question into the database
-					//echo '<p>Succesful?</p>';
-				?>
-			}
-			document.getElementById("demo").innerHTML = text;
-		}
-		</script><br><br>
+		</center>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php

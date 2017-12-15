@@ -3,7 +3,7 @@
 	include_once 'header.php';
 ?>
 		<h2>Login</h2><br><br>
-		<p>These forms kinda work?</p><br>
+		
 		<center><form class="signup-form" action="includes/signup-inc.php" method="POST">
 			<p>Insert your first name:</p>
 			<input type="text" name="first" placeholder="Firstname" class="textBox"><br><br>

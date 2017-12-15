@@ -27,7 +27,7 @@
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
 			//checkboth for answer independent of the case of q
-			$pos =strpos($answerholder, (strtolower($qnum) . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){
@@ -43,7 +43,7 @@
 		<?php
 		//change these vars for each test and quiz number
 		$test = 'exam1';
-		$qnum = 'Q2';
+		$qnum = 'Q4';
 		$numAns = 0;
 		if(!isset($_SESSION[$test])){
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
@@ -71,6 +71,7 @@
 					<button type="submit" name="submit" class="submitBtn">Reveal answers</button>
 				</form>';
 				$_SESSION['qnum']=$qnum;
+				
 		}
 		
 		?>

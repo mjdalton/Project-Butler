@@ -27,7 +27,7 @@
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
 			//checkboth for answer independent of the case of q
-			$pos =strpos($answerholder, (strtolower($qnum) . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false ){
@@ -59,6 +59,7 @@
 					<button type="submit" name="submit" class="submitBtn">Use a hint!</button>
 				</form>';
 				$_SESSION['qnum']=$qnum;
+				
 		}
 		echo '<br>';
 		
@@ -71,6 +72,7 @@
 					<button type="submit" name="submit" class="submitBtn">Reveal answers</button>
 				</form>';
 				$_SESSION['qnum']=$qnum;
+				
 		}
 		
 		?>

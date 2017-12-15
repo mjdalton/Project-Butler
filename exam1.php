@@ -21,7 +21,7 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, ($qnum . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){
@@ -40,7 +40,7 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, ($qnum . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){
@@ -59,7 +59,7 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, ($qnum . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){
@@ -78,7 +78,7 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, ($qnum . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){
@@ -97,7 +97,7 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, ($qnum . ','));
+			$pos =strpos(strtolower($answerholder), (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
 			if($pos !== false){

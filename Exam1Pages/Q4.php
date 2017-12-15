@@ -27,16 +27,55 @@
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
 			$pos = strpos($answerholder, ($qnum . ','));
+			$posl =strpos($answerholder, (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
-			if($pos !== false){
+			if($pos !== false || $posl !== false){
 				echo '<a href="../Exam1/Solutions/Q4s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 		
 			
 		?>
 		<a href="Q5.php"><button class="submitBtn">Question 5 -></button></a>
-		<p id="demo"></p></center>
+		<br><br>
+		
+		<!-- hint and solution unlocker-->
+		<?php
+		//change these vars for each test and quiz number
+		$test = 'exam1';
+		$qnum = 'Q2';
+		$numAns = 0;
+		if(!isset($_SESSION[$test])){
+				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
+		}
+		$numAns = substr_count($_SESSION[$test], 'Q');//counts num questions counted
+		if($numAns === 5){
+				exit();
+		}
+		if($numAns < 2){
+			echo "<p>Answers until next hint</p><p>".(2-$numAns)."</p>";
+		}else{
+			echo '<br><form action="Checker/UseHint.php" method="POST">
+					<button type="submit" name="submit" class="submitBtn">Use a hint!</button>
+				</form>';
+				$_SESSION['qnum']=$qnum;
+		}
+		echo '<br>';
+		
+		//add in non hinted answers
+		$numAns += substr_count($_SESSION[$test], 'q');//counts num questions counted
+		if($numAns < 4){
+			echo "<p>Answers until exam solutions unlocked</p><p>".(4-$numAns)."</p>";
+		}else{
+			echo '<br><form action="Checker/UnlockExam1.php" method="POST">
+					<button type="submit" name="submit" class="submitBtn">Reveal answers</button>
+				</form>';
+				$_SESSION['qnum']=$qnum;
+		}
+		
+		?>
+		
+		</center>
 
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!-- BS to make the footer stay at the bottom until a better solution is found -->
 <?php

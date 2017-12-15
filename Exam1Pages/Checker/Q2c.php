@@ -20,8 +20,13 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 		
 		//increment score and answer holder if not previously answered
 		if($pos === false){
-			$currentScore += 10;
-			$answerholder .= $qnum . ','; //append questions number to answerholder
+			//check for hint given
+			$qnum =strtolower($qnum);
+			$pos = strpos($answerholder, ($qnum . ','));
+			if($pos === false){
+				$currentScore += 10;
+				$answerholder .= strtoupper($qnum) . ','; //append questions number to answerholder
+			}
 		}
 		//set score and increment answers
 		if(isset($_SESSION['u_id'])){

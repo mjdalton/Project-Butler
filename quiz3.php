@@ -25,7 +25,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q1s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q1s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 2</h3><br>
@@ -42,7 +42,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q2s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q2s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 3</h3><br>
@@ -59,7 +59,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q3s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q3s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 4</h3><br>
@@ -76,7 +76,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q4s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q4s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 5</h3><br>
@@ -93,7 +93,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q5s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q5s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 6</h3><br>
@@ -110,7 +110,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q6s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q6s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 7</h3><br>
@@ -127,7 +127,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q7s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q7s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 8</h3><br>
@@ -144,7 +144,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q8s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q8s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 9</h3><br>
@@ -161,7 +161,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q9s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q9s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 			<h3>Question 10</h3><br>
@@ -178,7 +178,7 @@
 		
 			//display solution if question is answered
 			if($pos !== false){
-				echo '<a href="/Quiz3/Solutions/Q10s.PNG"><button class="submitBtn">Solution</button></a>';
+				echo '<a href="Quiz3/Solutions/Q10s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 			?><br><br>
 		</center>

@@ -13,7 +13,7 @@
 		<center><img src="../Exam2/Q5.png" alt="Question 5" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<form action="Checker/Q5c.php" method="POST">
-			<input type="number" name="answer" placeholder="Your Answer" class="textBox"><br><br>
+			<input type="text" name="answer" placeholder="Your Answer" class="textBox"><br><br>
 			<button type="submit" name="submit" class="submitBtn">Submit</button>		<br><br><br><br>
 		</form>
 		

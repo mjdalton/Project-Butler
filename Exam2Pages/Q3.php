@@ -12,7 +12,7 @@
 		<center><img src="../Exam2/Q3.png" alt="Question 3" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<form action="Checker/Q3c.php" method="POST">
-			<input type="number" name="answer" placeholder="Your Answer" class="textBox"><br><br>
+			<input type="text" name="answer" placeholder="Your Answer" class="textBox"><br><br>
 			<button type="submit" name="submit" class="submitBtn">Submit</button>		<br><br><br><br>
 		</form>
 		

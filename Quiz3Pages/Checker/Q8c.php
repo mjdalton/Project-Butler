@@ -6,7 +6,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 	//change these for each question
 	$test = 'quiz3';
 	$qnum = 'Q8';
-	$correctAns = 10;
+	$correctAns = 'x=3-t,y=-2+17t,z=4+10t';
 	
 	$answer = mysqli_escape_string($conn, $_POST['answer']);
 	$currentScore = $_SESSION['u_score']; //get current score

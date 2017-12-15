@@ -12,7 +12,7 @@
 		<center><img src="../Quiz2/Q6.png" alt="Question 6" class="img"><br><br><br><br><br>
 		<p>Input your answer here:</p>
 		<form action="checker/Q6c.php" method="POST">
-			<input type="number" name="answer" placeholder="Your Answer" class="textBox"><br><br>
+			<input type="text" name="answer" placeholder="Your Answer" class="textBox"><br><br>
 			<button type="submit" name="submit" class="submitBtn">Submit</button>		<br><br><br><br>
 		</form>
 		

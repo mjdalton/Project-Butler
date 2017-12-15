@@ -26,11 +26,11 @@
 				$_SESSION[$test] = ''; //set answerholder to empty string if not set yet
 			}
 			$answerholder = $_SESSION[$test]; //get current answerholder variable
-			$pos = strpos($answerholder, ($qnum . ','));
-			$posl =strpos($answerholder, (strtolower($qnum) . ','));
+			//checkboth for answer independent of the case of q
+			$pos =strpos($answerholder, (strtolower($qnum) . ','));
 		
 			//display solution if question is answered
-			if($pos !== false || $posl !== false){
+			if($pos !== false){
 				echo '<a href="../Exam1/Solutions/Q3s.PNG"><button class="submitBtn">Solution</button></a>';
 			}
 		

@@ -6,6 +6,14 @@
 			if (!isset($_SESSION['u_id'])) {
 				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
 			}
+			else{
+				if($_SESSION['exam1q1'] == 1){
+					echo '<br><br><h4>That is correct!</h4>';
+				}
+				else if($_SESSION['exam1q1'] == 2){
+					echo '<br><br><h4>That is incorrect!</h4>';
+				}
+			}
 		?>
 		<br><br><br>
 		<!--Question prompt-->
@@ -32,6 +40,11 @@
 			//display solution if question is answered
 			if($pos !== false ){
 				echo '<a href="../Exam1/Solutions/Q1s.PNG"><button class="submitBtn">Solution</button></a>';
+				$_SESSION['exam1q1'] = 1;
+				if($_SESSION['exam1q1refresh'] == 1){
+					$_SESSION['exam1q1refresh'] = 0;
+					header("Refresh:0");
+				}
 			}
 		
 			
@@ -53,7 +66,7 @@
 				exit();
 		}
 		if($numAns < 2){
-			echo "<p>Answers until next hint</p><p>".(2-$numAns)."</p>";
+			echo "<br><br><p>Number of correct answers until next hint unlocked:</p><p>".(2-$numAns)."</p>";
 		}else{
 			echo '<br><form action="Checker/UseHint.php" method="POST">
 					<button type="submit" name="submit" class="submitBtn">Use a hint!</button>
@@ -66,7 +79,7 @@
 		//add in non hinted answers
 		$numAns += substr_count($_SESSION[$test], 'q');//counts num questions counted
 		if($numAns < 4){
-			echo "<p>Answers until exam solutions unlocked</p><p>".(4-$numAns)."</p>";
+			echo "<p>Number of correct answers until all solutions unlocked:</p><p>".(4-$numAns)."</p>";
 		}else{
 			echo '<br><form action="Checker/UnlockExam1.php" method="POST">
 					<button type="submit" name="submit" class="submitBtn">Reveal answers</button>

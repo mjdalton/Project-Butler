@@ -52,6 +52,105 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 					$_SESSION['exam2'] = $row['exam2'];
 					$_SESSION['exam3'] = $row['exam3'];
 					
+					/* -------- exam question correctness variables ---------- */
+					//practice exam 1
+					$_SESSION['exam1q1'] = 0;
+					$_SESSION['exam1q2'] = 0;
+					$_SESSION['exam1q3'] = 0;
+					$_SESSION['exam1q4'] = 0;
+					$_SESSION['exam1q5'] = 0;
+					$_SESSION['exam1q1refresh'] = 1;
+					$_SESSION['exam1q2refresh'] = 1;
+					$_SESSION['exam1q3refresh'] = 1;
+					$_SESSION['exam1q4refresh'] = 1;
+					$_SESSION['exam1q5refresh'] = 1;
+					//practice exam 2
+					$_SESSION['exam2q1'] = 0;
+					$_SESSION['exam2q2'] = 0;
+					$_SESSION['exam2q3'] = 0;
+					$_SESSION['exam2q4'] = 0;
+					$_SESSION['exam2q5'] = 0;
+					$_SESSION['exam2q1refresh'] = 1;
+					$_SESSION['exam2q2refresh'] = 1;
+					$_SESSION['exam2q3refresh'] = 1;
+					$_SESSION['exam2q4refresh'] = 1;
+					$_SESSION['exam2q5refresh'] = 1;
+					//practice exam 3
+					$_SESSION['exam3q1'] = 0;
+					$_SESSION['exam3q2'] = 0;
+					$_SESSION['exam3q3'] = 0;
+					$_SESSION['exam3q4'] = 0;
+					$_SESSION['exam3q5'] = 0;
+					$_SESSION['exam3q1refresh'] = 1;
+					$_SESSION['exam3q2refresh'] = 1;
+					$_SESSION['exam3q3refresh'] = 1;
+					$_SESSION['exam3q4refresh'] = 1;
+					$_SESSION['exam3q5refresh'] = 1;
+					
+					/* -------- quiz question correctness variables --------- */
+					$_SESSION['quiz1q1'] = 0;
+					$_SESSION['quiz1q2'] = 0;
+					$_SESSION['quiz1q3'] = 0;
+					$_SESSION['quiz1q4'] = 0;
+					$_SESSION['quiz1q5'] = 0;
+					$_SESSION['quiz1q6'] = 0;
+					$_SESSION['quiz1q7'] = 0;
+					$_SESSION['quiz1q8'] = 0;
+					$_SESSION['quiz1q9'] = 0;
+					$_SESSION['quiz1q10'] = 0;
+					$_SESSION['quiz1q1refresh'] = 1;
+					$_SESSION['quiz1q2refresh'] = 1;
+					$_SESSION['quiz1q3refresh'] = 1;
+					$_SESSION['quiz1q4refresh'] = 1;
+					$_SESSION['quiz1q5refresh'] = 1;
+					$_SESSION['quiz1q6refresh'] = 1;
+					$_SESSION['quiz1q7refresh'] = 1;
+					$_SESSION['quiz1q8refresh'] = 1;
+					$_SESSION['quiz1q9refresh'] = 1;
+					$_SESSION['quiz1q10refresh'] = 1;
+					//quiz 2
+					$_SESSION['quiz2q1'] = 0;
+					$_SESSION['quiz2q2'] = 0;
+					$_SESSION['quiz2q3'] = 0;
+					$_SESSION['quiz2q4'] = 0;
+					$_SESSION['quiz2q5'] = 0;
+					$_SESSION['quiz2q6'] = 0;
+					$_SESSION['quiz2q7'] = 0;
+					$_SESSION['quiz2q8'] = 0;
+					$_SESSION['quiz2q9'] = 0;
+					$_SESSION['quiz2q10'] = 0;
+					$_SESSION['quiz2q1refresh'] = 1;
+					$_SESSION['quiz2q2refresh'] = 1;
+					$_SESSION['quiz2q3refresh'] = 1;
+					$_SESSION['quiz2q4refresh'] = 1;
+					$_SESSION['quiz2q5refresh'] = 1;
+					$_SESSION['quiz2q6refresh'] = 1;
+					$_SESSION['quiz2q7refresh'] = 1;
+					$_SESSION['quiz2q8refresh'] = 1;
+					$_SESSION['quiz2q9refresh'] = 1;
+					$_SESSION['quiz2q10refresh'] = 1;
+					//quiz3
+					$_SESSION['quiz3q1'] = 0;
+					$_SESSION['quiz3q2'] = 0;
+					$_SESSION['quiz3q3'] = 0;
+					$_SESSION['quiz3q4'] = 0;
+					$_SESSION['quiz3q5'] = 0;
+					$_SESSION['quiz3q6'] = 0;
+					$_SESSION['quiz3q7'] = 0;
+					$_SESSION['quiz3q8'] = 0;
+					$_SESSION['quiz3q9'] = 0;
+					$_SESSION['quiz3q10'] = 0;
+					$_SESSION['quiz3q1refresh'] = 1;
+					$_SESSION['quiz3q2refresh'] = 1;
+					$_SESSION['quiz3q3refresh'] = 1;
+					$_SESSION['quiz3q4refresh'] = 1;
+					$_SESSION['quiz3q5refresh'] = 1;
+					$_SESSION['quiz3q6refresh'] = 1;
+					$_SESSION['quiz3q7refresh'] = 1;
+					$_SESSION['quiz3q8refresh'] = 1;
+					$_SESSION['quiz3q9refresh'] = 1;
+					$_SESSION['quiz3q10refresh'] = 1;
+					
 					header("Location: ../index.php?login=success");
 					exit();
 					

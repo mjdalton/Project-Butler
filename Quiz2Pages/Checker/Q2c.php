@@ -39,6 +39,7 @@ if (isset($_POST['submit'])){ //checks if the submit button has been clicked
 		exit();
 	}
 	else{
+		$_SESSION['quiz2q2'] = 2;
 		header("Location: ../$qnum.php?submission=incorrect");
 		exit();
 	}

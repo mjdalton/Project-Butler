@@ -6,6 +6,14 @@
 			if (!isset($_SESSION['u_id'])) {
 				echo "<h2>WARNING: Your data will not be saved unless you login</h2><br><br><br>";
 			}
+			else{
+				if($_SESSION['exam1q4'] == 1){
+					echo '<br><br><h4>That is correct!</h4>';
+				}
+				else if($_SESSION['exam1q4'] == 2){
+					echo '<br><br><h4>That is incorrect!</h4>';
+				}
+			}
 		?>
 		<br><br><br>
 		<!--Question prompt-->
@@ -32,6 +40,11 @@
 			//display solution if question is answered
 			if($pos !== false){
 				echo '<a href="../Exam1/Solutions/Q4s.PNG"><button class="submitBtn">Solution</button></a>';
+				$_SESSION['exam1q4'] = 1;
+				if($_SESSION['exam1q4refresh'] == 1){
+					$_SESSION['exam1q4refresh'] = 0;
+					header("Refresh:0");
+				}
 			}
 		
 			
